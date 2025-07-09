@@ -1,4 +1,18 @@
+# 🖐️ Smart Appliance Control using Real-Time Finger Detection & ESP32
 
+Control appliances like lights or fans with just your **fingers** using **computer vision** and an **ESP32 microcontroller**. This project detects the number of fingers shown via a webcam using Python (OpenCV + MediaPipe), and sends the count over USB serial to the ESP32, which activates the appropriate appliance.
+
+---
+
+## 🎯 Project Objective
+
+Create a **hands-free appliance control system** by detecting finger gestures using a webcam and controlling physical devices like LEDs or relays using ESP32 GPIOs.
+
+---
+
+## 📸 How It Works
+
+Webcam ──▶ Python (OpenCV + MediaPipe) ──▶ Finger Count ──▶ Serial to ESP32 ──▶ LED / Relay Control
 - 📷 **Webcam** captures hand gesture in real-time.
 - 🧠 **MediaPipe** detects and tracks hand landmarks.
 - ✌️ **Finger count** is interpreted (1, 2, or 0 fingers).
